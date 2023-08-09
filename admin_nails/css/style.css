@@ -1,0 +1,94 @@
+/* The Modal (background) */
+.modal1 {
+    display: none;
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 10px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+/* Modal Content */
+.modal1 .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    animation: translateY .5s ease-in-out;
+}
+
+/* The Close Button */
+.modal1 .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1199.98px) {
+    .modal1 .modal-content {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .modal1 .modal-content {
+        width: 90%;
+    }
+}
+
+.modal1 .close:hover,
+.modal1 .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table a.icon{
+    font-size: 30px;
+}
+.icon.edit{
+    color: var(--primary);
+}
+
+.icon.delete{
+    color: var(--danger);
+}
+.icon.send{
+    color: var(--success);
+}
+.icon.send:hover{
+    color: var(--indigo);
+}
+table thead tr th{
+    color: var(--primary);
+}
+.custom-table thead tr th{
+    color: var(--primary);
+    width: 120px;
+    white-space: nowrap;
+}
+.custom-table thead tr th:first-child,
+.custom-table thead tr th:last-child{
+    width: 20px !important;
+    max-width: 100px!important;
+}
+
+.checkbox-delete{
+    display: none;
+}
+.checkbox-delete.active{
+    display: table-cell;
+}
